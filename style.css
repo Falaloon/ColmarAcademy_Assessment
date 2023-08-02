@@ -57,7 +57,21 @@ a{
 .mb-24{
     margin-bottom: 24px;
 }
+.w-35{
+    width: 35%;
+}
 
+.w-65{
+    width: 65%;
+}
+
+.h-a{
+    height: auto;
+}
+
+.p-16{
+    padding: 16px;
+}
 .destop_right_bar{
     column-gap: 16px;
 }
@@ -74,12 +88,12 @@ a{
     align-items: center;
 }
 
-.hero{
+.hero,.information_destop, ._right_card{
     display: flex;
     flex-direction: row;
 }
 
-.hero_image{
+.hero_image, .information_left{
     padding: 32px 24px 32px 24px;
 }
 
@@ -93,19 +107,59 @@ a{
     padding-bottom:8px ;
 }
 
+.img_left_image{
+    padding-bottom: 32px;
+}
+
+.information_right{
+    flex-direction: column;
+}
+
+._right_card{
+    align-items: center;
+}
+
+._card_text p{
+    padding-top: 8px;
+    padding-bottom:8px ;
+}
+
+.information_mobile_text{
+    padding: 16px 16px  64px 16px ;
+    /* บ ซ ล ข */
+}
+
+.information_mobile_text, ._mobile_text{
+    padding-bottom: 16px;
+}
+
+
+
+
+
+
+
+
+
 
 /* จอมากกว่า 769px =แสดงผลบนจอคอมพิวเตอร์ */
 @media screen and (min-width: 769px) {
     .mobile{
         display: none;
     }
-    
+    .mobile_icon{
+        display: none;
+    }
+
+    .information_mobile{
+        display: none;
+    }
 } 
 
 
 /* จอต่ำกว่า 768px =แสดงผลบนจอเทปเล็ด มือถือ */
 @media screen and (max-width:768px){
-    .destop{
+    .destop , .information_destop{
         display: none;
     }
     .mobile_icon{
@@ -125,14 +179,18 @@ a{
     }
 
     .hero_text{
+           /* บ ซ ล ข */
         margin: 32px 16px 32px 16px;
-        padding-left: 16px;
+
     }
     .h_text1{
         margin-bottom: 32px;
+        padding-left: 16px;
+
     } 
     .h_text2{
         margin-bottom: 24px;
+        padding-left: 16px;
     } 
     .h_text3{
         padding-left: 16px;
