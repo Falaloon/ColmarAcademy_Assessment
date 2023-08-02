@@ -1,9 +1,12 @@
 *{
     font-family: 'Nanum Gothic', sans-serif;
-    border-style: solid; 
+    /* border-style: solid; 
     border-color: blue; 
-    border-width: 0.5px;
+    border-width: 0.5px; */
     margin: 0;
+}
+.html{
+    width: 100%;
 }
 
 .destop, .mobile{
@@ -72,6 +75,16 @@ a{
 .p-16{
     padding: 16px;
 }
+
+.p-16-24{
+    padding: 16px 16px 24px 16px;
+}
+
+.pt-pb-8{
+    padding-top: 8px;
+    padding-bottom:8px ;
+}
+
 .destop_right_bar{
     column-gap: 16px;
 }
@@ -102,10 +115,10 @@ a{
     
 }
 
-.hero_text button{
+/* .hero_text button{
     padding-top: 8px;
     padding-bottom:8px ;
-}
+} */
 
 .img_left_image{
     padding-bottom: 32px;
@@ -119,10 +132,10 @@ a{
     align-items: center;
 }
 
-._card_text p{
+/* ._card_text p{
     padding-top: 8px;
     padding-bottom:8px ;
-}
+} */
 
 .information_mobile_text{
     padding: 16px 16px  64px 16px ;
@@ -132,6 +145,33 @@ a{
 .information_mobile_text, ._mobile_text{
     padding-bottom: 16px;
 }
+
+.course_head{
+    text-align: center;
+    padding: 32px 0px  32px 0px ;
+}
+
+.course_learning{
+    list-style: none;
+    padding: 0px 72px  32px 72px ;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    gap: 32px;
+    justify-content: center;
+
+    
+}
+
+.course_card{
+    width: 30%;
+}
+
+
+
+
+
+
 
 
 
